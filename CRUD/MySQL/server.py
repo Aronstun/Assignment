@@ -83,5 +83,5 @@ def update_employee(empid):
 def get_employees():    #Function to get all the employees in the database
     return jsonify({'Employees': Employee.get_all_employees()}) #returns all the employees by calling the get_all_employees() function defined in the Employee class
 
-app.run(debug=True,port=5000)
+app.run(debug=True,port=5000)   #runs the deployment server
 
