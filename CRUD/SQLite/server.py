@@ -6,7 +6,7 @@ import json
 
 app = Flask(__name__) #creating an instance of the Flask app
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///Employees.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///Employees.db'    #The database URI used for the connection
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False 
 
 db = SQLAlchemy(app)
