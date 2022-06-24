@@ -2,7 +2,7 @@ from flask import Flask,jsonify,request,json #importing classes
 from flask_pymongo import PyMongo #importing PyMongo class that manages MongoDB connections to the Flask app
 
 app=Flask(__name__) #creating an instance of Flask
-app.config['MONGO_URI']='mongodb://localhost:27017/Employees' 
+app.config['MONGO_URI']='mongodb://localhost:27017/Employees' #URI connection to the database
 
 mongo=PyMongo(app) #PyMongo connects to the MongoDB server running on port 27017 on localhost, to the database named Employees. 
 ab=mongo.db.Employees #Employees database is exposed as the db attribute.
