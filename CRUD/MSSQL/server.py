@@ -10,7 +10,7 @@ app = Flask(__name__) #creating an instance of the Flask app
 servername='@LAPTOP-45LE5KMT\\SQLEXPRESS'
 dbname='Employees'
 
-app.config['SQLALCHEMY_DATABASE_URI'] = "mssql+pymssql://abdulvahab:cirrus123@35.232.137.244/empdb"
+app.config['SQLALCHEMY_DATABASE_URI'] = "mssql+pymssql://abdulvahab:cirrus123@35.232.137.244/empdb" #URI connection to the database
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False 
 
 db = SQLAlchemy(app)
